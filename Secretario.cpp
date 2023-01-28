@@ -7,7 +7,7 @@ Secretario::Secretario() {
 }
 Secretario::Secretario(string nombre, string apellidos,
 	string dni, string direccion,
-	string telefono, double salario, int aniosLaboral,
+	string telefono, int aniosLaboral, double salario, 
 	int puesto, string num_fax) : Empleado(nombre, apellidos, dni,
 		direccion, telefono, aniosLaboral, salario)  {
 	this->puesto = puesto;
