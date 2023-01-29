@@ -7,7 +7,7 @@ Secretario::Secretario() {
 }
 Secretario::Secretario(string nombre, string apellidos,
 	string dni, string direccion,
-	string telefono, double salario, int aniosLaboral,
+	string telefono, int aniosLaboral, double salario,
 	int puesto, string num_fax) : Empleado(nombre, apellidos, dni,
 		direccion, telefono, aniosLaboral, salario)  {
 	this->puesto = puesto;
@@ -35,8 +35,8 @@ void Secretario::imprimir() {
 	cout << " Secretario " << endl;
 	cout << "=================" << endl;
 	Empleado::imprimir();
-	cout << "Numero de Fax:\t" << this->num_fax << endl;
-	cout << "Puesto:\t";
+	cout << "Numero de Fax:               \t" << this->num_fax << endl;
+	cout << "Puesto:                      \t";
 	switch (this->puesto) {
 	case Secretario::DIRECCION: cout << "Secretario de direccion" << endl;
 		break;
